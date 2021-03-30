@@ -5,7 +5,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 	<!-- Title -->
-	<title>Substance - Professional Bootstrap Template</title>
+	<title>Komei Juku Paris</title>
 	<!-- Meta -->
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="">
@@ -24,6 +24,7 @@
 	<!-- Google Fonts-->
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+	<script src="https://unpkg.com/@botpoison/browser"></script>
 </head>
 <body>
 	<div id="pre_header" class="visible-lg"></div>
@@ -32,7 +33,7 @@
 			<!-- Logo -->
 			<div class="logo">
 				<a href="index.html" title="">
-					<img src="assets/img/logo.png" alt="Logo" />
+					<img src="assets/img/logo2.png" alt="Logo" />
 				</a>
 			</div>
 			<!-- End Logo -->
@@ -40,69 +41,15 @@
 			<div class="col-md-12 margin-top-30">
 				<div id="hornav" class="pull-right visible-lg">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li><span>Features</span>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="https://komeijuku.jp/">Quartier général</a></li>
+						<li><a href="lignee.html">Lignée</a></li>
+						<li><span>Nouvelles</span>
 							<ul>
-								<li class="parent"><span>Typography</span>
-									<ul>
-										<li><a href="features-typo-basic.html">Basic Typography</a></li>
-										<li><a href="features-typo-blockquotes.html">Blockquotes</a></li>
-									</ul>
-								</li>
-								<li class="parent"><span>Components</span>
-									<ul>
-										<li><a href="features-labels.html">Labels</a></li>
-										<li><a href="features-progress-bars.html">Progress Bars</a></li>
-										<li><a href="features-panels.html">Panels</a></li>
-										<li><a href="features-pagination.html">Pagination</a></li>
-									</ul>
-								</li>
-								<li class="parent"><span>Icons</span>
-									<ul>
-										<li><a href="features-icons.html">Icons General</a></li>
-										<li><a href="features-icons-social.html">Social Icons</a></li>
-										<li><a href="features-icons-font-awesome.html">Font Awesome</a></li>
-										<li><a href="features-icons-glyphicons.html">Glyphicons</a></li>
-									</ul>
-								</li>
-								
-								<li><a href="features-testimonials.html">Testimonials</a></li>
-								<li><a href="features-accordions-tabs.html">Accordions & Tabs</a></li>
-								<li><a href="features-buttons.html">Buttons</a></li>
-								<li><a href="features-carousels.html">Carousels</a></li>
-								<li><a href="features-grid.html">Grid System</a></li>
-								<li><a href="features-animate-on-scroll.html">Animate On Scroll</a></li>
+								<li><a href="#">En cours de construction</a></li>
 							</ul>
 						</li>
-						<li><span>Pages</span>
-							<ul>
-								<li><a href="pages-about-us.html">About Us</a></li>
-								<li><a href="pages-services.html">Services</a></li>
-								<li><a href="pages-faq.html">F.A.Q.</a></li>
-								<li><a href="pages-about-me.html">About Me</a></li>
-								<li><a href="pages-full-width.html">Full Width</a></li>
-								<li><a href="pages-left-sidebar.html">Left Sidebar</a></li>
-								<li><a href="pages-right-sidebar.html">Right Sidebar</a></li>
-								<li><a href="pages-login.html">Login</a></li>
-								<li><a href="pages-sign-up.html">Sign-Up</a></li>
-								<li><a href="pages-404.html">404 Error Page</a></li>
-							</ul>
-						</li>
-						<li><span>Portfolio</span>
-							<ul>
-								<li><a href="portfolio-2-column.html">2 Column</a></li>
-								<li><a href="portfolio-3-column.html">3 Column</a></li>
-								<li><a href="portfolio-4-column.html">4 Column</a></li>
-								<li><a href="portfolio-6-column.html">6 Column</a></li>
-							</ul>
-						</li>
-						<li><span>Blog</span>
-							<ul>
-								<li><a href="blog-list.html">Blog</a></li>
-								<li><a href="blog-single.html">Blog Single Item</a></li>
-							</ul>
-						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="./contact.html">Contact</a></li> <!-- contact.html -->
 					</ul>				</div>
 				</div>
 				<div class="clear"></div>
@@ -115,11 +62,47 @@
 			<!-- Main Column -->
 			<div class="col-md-9">
 				<!-- Main Content -->
-				<div class="headline"><h2>Contact Form</h2></div>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas feugiat. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit landitiis.</p><br>
+				<div class="headline"><h2>Formulaire de contact</h2></div>
+				<p>S'il vous plaît, écrivez-nous si vous souhaitez en savoir plus sur l'art et notre école:</p><br>
 				<!-- Contact Form -->
-				<form>
-					<label>Name</label>
+
+				<form action="https://submit-form.com/3O9XV5D3">
+					<label for="name">Nom</label>
+					<div class="row margin-bottom-20">
+						<div class="col-md-6 col-md-offset-0">
+							<input class="form-control" type="text" id="name" name="name" placeholder="Name" required="" />
+							<!-- <input class="form-control" type="text" id="name" name="name" placeholder="Name" required=""> -->
+						</div>
+					</div>
+
+					<label>Email <span class="color-red">*</span></label>
+					<div class="row margin-bottom-20">
+						<div class="col-md-6 col-md-offset-0">
+							<!-- <input class="form-control" type="text"> -->
+							<input class="form-control" type="email" id="email" name="email" placeholder="Email" required="" />
+						</div>
+					</div>
+
+					<label>Message</label>
+					<div class="row margin-bottom-20">
+						<div class="col-md-8 col-md-offset-0">
+							<textarea
+							rows="8"
+							class="form-control"
+							id="message"
+							name="message"
+							placeholder="Message"
+							required=""
+						  ></textarea>
+							  </div>
+					</div>
+					
+					<p><button type="submit" class="btn btn-primary">Envoyer le Message</button></p> 
+				  	</form>
+
+			<!--
+				<form action="https://submit-form.com/3O9XV5D3">
+					<label>Nom</label>
 					<div class="row margin-bottom-20">
 						<div class="col-md-6 col-md-offset-0">
 							<input class="form-control" type="text">
@@ -140,8 +123,9 @@
 						</div>
 					</div>
 					
-					<p><button type="submit" class="btn btn-primary">Send Message</button></p>
+					<p><button type="submit" class="btn btn-primary">Envoyer le Message</button></p>
 				</form>
+			-->
 				<!-- End Contact Form -->
 				<!-- End Main Content -->
 			</div>
@@ -151,19 +135,18 @@
 				<!-- Recent Posts -->
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Contact Info</h3>
+						<h3 class="panel-title">Informations de contact</h3>
 					</div>
 					<div class="panel-body">
-						<p>Lorem ipsum dolor sit amet, no cetero voluptatum est, audire sensibus maiestatis vis et. Vitae audire prodesset an his. Nulla ubique omnesque in sit.</p>
+						<p>N'hésitez pas à nous contacter.</p>
 						<ul class="list-unstyled">
-							<li><i class="fa-phone color-primary"></i>+353-44-55-66</li>
-							<li><i class="fa-envelope color-primary"></i>info@example.com</li>
-							<li><i class="fa-home color-primary"></i>http://www.example.com</li>
+							<li><i class="fa-envelope color-primary"></i>info@...</li>
+							<li><i class="fa-home color-primary"></i>http://kjparis.fr</li>
 						</ul>
 						<ul class="list-unstyled">
-							<li><strong class="color-primary">Monday-Friday:</strong> 9am to 6pm</li>
-							<li><strong class="color-primary">Saturday:</strong> 10am to 3pm</li>
-							<li><strong class="color-primary">Sunday:</strong> Closed</li>
+							<li><strong class="color-primary">Lunedi-Vendredi:</strong> de 9h00 à 18h00</li>
+							<li><strong class="color-primary">Samedi:</strong> 10h à 15h</li>
+							<li><strong class="color-primary">Dimanche:</strong> Fermé</li>
 						</ul>
 					</div>
 				</div>
@@ -171,10 +154,13 @@
 				<!-- About -->
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">About</h3>
+						<h3 class="panel-title">À propos de</h3>
 					</div>
 					<div class="panel-body">
-						Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.
+						Le Iaijutsu est un ancien art martial japonais de l'épée, 
+						caractérisé principalement par une pratique en solitaire et 
+						en paires de formes fixes, où au moyen de l'observation et de 
+						la répétition un niveau artistique élevé est atteint.
 					</div>
 				</div>
 				<!-- End About -->
@@ -184,13 +170,14 @@
 		</div>
 	</div>
 	<!-- === END CONTENT === -->
+
 	<!-- === BEGIN FOOTER === -->
 	<div id="base">
 		<div class="container padding-vert-30">
 			<div class="row">
 				<!-- Thumbs Gallery -->
 				<div class="col-md-3 margin-bottom-20">
-					<h3 class="margin-bottom-10">Portfolio Highlights</h3>
+					<h3 class="margin-bottom-10">Faits saillants du portefeuille</h3>
 					<div class="thumbs-gallery">
 						
 						<a class="thumbBox" rel="lightbox-thumbs" href="assets/img/thumbsgallery/image1.jpg">
@@ -256,30 +243,35 @@
 					<!-- End Thumbs Gallery -->
 					<!-- Contact Details -->
 					<div class="col-md-3 margin-bottom-20">
-						<h3 class="margin-bottom-10">Contact Details</h3>
+						<h3 class="margin-bottom-10">Détails du contact</h3>
+						<!--
 						<p>Quay View,<br />
 						Mullaghmore,<br />
 						Co. Sligo,<br />
 						Ireland</p>
 						<p>Email: <a href="mailto:info@website.com">info@website.com</a><br />
-						Website: <a href="http://www.website.com/">www.website.com</a></p>
+							-->
+						Web: <a href="http://kjparis.fr/">www.kjparis.fr</a></p>
 					</div>
 					<!-- End Contact Details -->
 					<!-- Sample Menu -->
 					<div class="col-md-3 margin-bottom-20" >
-						<h3 class="margin-bottom-10">Sample Menu</h3>
+						<h3 class="margin-bottom-10">Menu</h3>
 						<ul class="menu">
 							<li>
-								<a class="fa-tasks" href="#" >Placerat facer possim</a>
+								<a class="fa-tasks" href="#" >Iaijutsu</a>
 							</li>
 							<li>
-								<a class="fa-users" href="#" >Quam nunc putamus</a>
+								<a class="fa-users" href="https://komeijuku.jp/" >Quartier général</a>
 							</li>
 							<li>
-								<a class="fa-signal" href="#" >Velit esse molestie</a>
+								<a class="fa-signal" href="./lingee.html" >Lignée</a>
 							</li>
 							<li>
-								<a class="fa-coffee" href="#">Nam liber tempor</a>
+								<a class="fa-exclamation" href="#" >Nouvelles</a>
+							</li>
+							<li>
+								<a class="fa-coffee" href="./contact.html">Contact</a>
 							</li>
 						</ul>
 						<div class="clearfix"></div>
@@ -288,8 +280,8 @@
 					<!-- End Sample Menu -->
 					<!-- Disclaimer -->
 					<div class="col-md-3 margin-bottom-20">
-						<h3 class="margin-bottom-10">Disclaimer</h3>
-						<p>All stock images on this template demo are for presentation purposes only, intended to represent a live site and are not included with this template. Links are provided if you wish to purchase them from their copyright owners.</p>
+						<h3 class="margin-bottom-10">Avertissement</h3>
+						<p>Toutes les informations présentes sur ce site - kjparis.fr - sont publiées de bonne foi et à des fins d'information générale uniquement. Toute action que vous entreprenez sur les informations que vous trouvez sur ce site (kjparis.fr), est strictement à vos propres risques. kjparis.fr ne pourra être tenu responsable des pertes et / ou dommages liés à l'utilisation de nos informations.</p>
 						<div class="clearfix"></div>
 					</div>
 					<!-- End Disclaimer -->
@@ -302,21 +294,24 @@
 			<div class="container">
 				<div class="row">
 					<div id="copyright" class="col-md-4">
-						<p>(c) 2014 Your Copyright Info</p>
+						<p>2020-21 Komei Juku Paris.</p>
 					</div>
 					<div id="footermenu" class="col-md-8">
 						<ul class="list-unstyled list-inline pull-right">
 							<li>
-								<a href="#" target="_blank" >Sample Link</a>
+								<a href="#" target="_blank" >Accueil</a>
 							</li>
 							<li>
-								<a href="#" target="_blank" >Sample Link</a>
+								<a href="https://komeijuku.jp/" target="_blank" >Quartier général</a>
 							</li>
 							<li>
-								<a href="#" target="_blank" >Sample Link</a>
+								<a href="./lingee.html" target="_blank" >Lignée</a>
 							</li>
 							<li>
-								<a href="#" target="_blank" >Sample Link</a>
+								<a href="#" target="_blank" >Nouvelles</a>
+							</li>
+							<li>
+								<a href="./contact.html" target="_blank" >Contact</a>
 							</li>
 						</ul>
 					</div>
