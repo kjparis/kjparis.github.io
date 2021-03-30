@@ -25,7 +25,12 @@
 	<!-- Google Fonts-->
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
-	<script src="https://unpkg.com/@botpoison/browser"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+		function onSubmit(token) {
+		  document.getElementById("contact-form").submit();
+		}
+	  </script>
 </head>
 <body>
 	<div id="pre_header" class="visible-lg"></div>
@@ -83,7 +88,7 @@
 							<img src="assets/img/slideshow/slide-kj-combined-1.png">
 						</div>
 						<div class="item">
-							<img src="assets/img/slideshow/slide-kj-combined-2.png">
+							<img src="assets/img/slideshow/slide-kj-combined-2b.png">
 						</div>
 					</div>
 					<!-- End Carousel Images -->
@@ -115,7 +120,7 @@
 				<!-- Side Column -->
 				<div class="col-md-3">
 					<h3 class="margin-bottom-10">Contact</h3>
-					<form action="https://submit-form.com/3O9XV5D3">
+					<form id="contact-form" action="https://submit-form.com/3O9XV5D3">
 						<input class="form-control" type="text" id="name" name="name" placeholder="Name" required="" />
 
 						<input class="form-control" type="email" id="email" name="email" placeholder="Email" required="" />
@@ -134,7 +139,15 @@
 							</div>
 						</div>
 							
-						<p style="text-align:right"><button type="submit" class="btn btn-primary">Envoyer le Message</button></p> 
+						<p style="text-align:right">
+							<button 
+								type="submit" 
+								class="btn btn-primary"
+								class="g-recaptcha" 
+								data-sitekey="6Lf2hpQaAAAAAMIExPbfqGgyS-YO5lDLiTHbdJrP" 
+								data-callback='onSubmit' 
+								data-action='submit'
+								>Envoyer le Message</button></p> 
 						  </form>
 	
 					</div>
