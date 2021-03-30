@@ -24,7 +24,12 @@
 	<!-- Google Fonts-->
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
-	<script src="https://unpkg.com/@botpoison/browser"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+		function onSubmit(token) {
+		  document.getElementById("contact-form").submit();
+		}
+	  </script>
 </head>
 <body>
 	<div id="pre_header" class="visible-lg"></div>
@@ -66,7 +71,7 @@
 				<p>S'il vous plaît, écrivez-nous si vous souhaitez en savoir plus sur l'art et notre école:</p><br>
 				<!-- Contact Form -->
 
-				<form action="https://submit-form.com/3O9XV5D3">
+				<form id="contact-form" action="https://submit-form.com/3O9XV5D3">
 					<label for="name">Nom</label>
 					<div class="row margin-bottom-20">
 						<div class="col-md-6 col-md-offset-0">
@@ -97,7 +102,14 @@
 							  </div>
 					</div>
 					
-					<p><button type="submit" class="btn btn-primary">Envoyer le Message</button></p> 
+					<p><button 
+						type="submit" 
+						class="btn btn-primary"
+						class="g-recaptcha" 
+						data-sitekey="6Lf2hpQaAAAAAMIExPbfqGgyS-YO5lDLiTHbdJrP" 
+						data-callback='onSubmit' 
+						data-action='submit'
+						>Envoyer le Message</button></p> 
 				  	</form>
 
 			<!--
