@@ -39,7 +39,8 @@
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
 		function onSubmit(token) {
-		  document.getElementById("contact-form").submit();
+			window.open("https://www.kjparis.fr/assets/img/contact-form.png", "_blank");
+			document.getElementById("contact-form").submit();
 		}
 	  </script>
 
@@ -449,7 +450,6 @@
 		  modal.style.left = "28%";
 		  modal.style.right = "33%";
 		  modalImg.src = this.src;
-		  modelImg.style = "position:absolute;left:50%;top:50%;width:20%;height:auto;max-height:200px";
 		  captionText.innerHTML = this.alt;
 		}
 		
