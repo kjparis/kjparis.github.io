@@ -50,8 +50,7 @@ As a user in the EU, you have the following rights:
 - **Right to object** – Object to processing based on legitimate interests.
 - **Right to withdraw consent** – Withdraw consent at any time for processing based on consent.
 
-To exercise any of these rights, contact us at [your@email.com](mailto:your@email.com).
-
+To exercise any of these rights, contact us at www.kjparis.fr
 ## 10. Third-Party Sharing
 We do not sell or rent your personal data. However, we may share data with:
 - **Service providers** (hosting, analytics, email delivery, etc.)
