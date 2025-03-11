@@ -37,6 +37,16 @@
 	<link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 	<script src="https://www.google.com/recaptcha/api.js"></script>
+
+	<!-- Twitter conversion tracking base code -->
+	<script>
+	!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+	},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+	a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+	twq('config','p8w1h');
+	</script>
+	<!-- End Twitter conversion tracking base code -->
+	
 	<script>
 		function onSubmit(event) {
 		    event.preventDefault(); // Evita el envío automático del formulario
@@ -50,7 +60,7 @@
 		    // Esperar un momento antes de enviar el formulario
 		    setTimeout(function () {
 		      document.getElementById("contact-form").submit();
-		    }, 500); // Pequeña pausa para asegurar que el evento de conversión se registre
+		    }, 1000); // Pequeña pausa para asegurar que el evento de conversión se registre
 		
 		    return false; // Asegura que no se envíe antes de tiempo
 		  }
@@ -78,15 +88,6 @@
   gtag('config', 'G-M85WLF9KCZ');
 </script>
 <!-- End of GA4 -->
-
-<!-- Twitter conversion tracking base code -->
-<script>
-!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
-a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-twq('config','p8w1h');
-</script>
-<!-- End Twitter conversion tracking base code -->
 
 </head>
 <body>
