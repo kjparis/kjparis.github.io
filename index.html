@@ -38,12 +38,23 @@
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script>
-		function onSubmit(token) {
-			window.open("https://www.kjparis.fr/assets/img/contact-form.png", "_blank");
-			document.getElementById("contact-form").submit();
-			alert("Test de Submit!!!");
-		}
-	  </script>
+		function onSubmit(event) {
+		    event.preventDefault(); // Evita el envío automático del formulario
+		
+		    // Llamar al evento de conversión de Twitter
+		    twq('event', 'tw-p8w1h-p8w1i');
+		
+		    // Abrir una nueva ventana con la imagen de confirmación
+		    window.open("https://www.kjparis.fr/assets/img/contact-form.png", "_blank");
+		
+		    // Esperar un momento antes de enviar el formulario
+		    setTimeout(function () {
+		      document.getElementById("contact-form").submit();
+		    }, 500); // Pequeña pausa para asegurar que el evento de conversión se registre
+		
+		    return false; // Asegura que no se envíe antes de tiempo
+		  }
+	</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-194023931-1">
@@ -167,7 +178,7 @@ twq('config','p8w1h');
 				<!-- Side Column -->
 				<div class="col-md-3">
 					<h3 class="margin-bottom-10">Info/Groupe d'Étude:</h3>
-					<form id="contact-form" action="https://submit-form.com/3O9XV5D3">
+					<form id="contact-form" action="https://submit-form.com/3O9XV5D3" onsubmit="return onSubmit(event)">
 						<input class="form-control" type="text" id="name" name="name" placeholder="Name" required="" />
 
 						<input class="form-control" type="email" id="email" name="email" placeholder="Email" required="" />
